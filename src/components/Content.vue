@@ -60,8 +60,8 @@ export default {
       max-width: $containerSize;
       margin: auto;
       color: white;
-      
     }
+    
     .link-icon{
       display: flex;
       align-items: center;
