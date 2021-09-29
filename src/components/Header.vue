@@ -6,18 +6,12 @@
     </div>
     <nav>
       <ul>
-        <li>
-          <a href="#">Link</a>
+        <li v-for="(link, index) in menu" :key="index">
+          <a href="link.url">{{link.nameLink}}</a>
         </li>
-             <li>
-          <a href="#">Link</a>
-        </li>
-             <li>
-          <a href="#">Link</a>
-        </li>
-             <li>
-          <a href="#">Link</a>
-        </li>
+            
+            
+             
       </ul>
     </nav>
   </header>
@@ -26,6 +20,62 @@
 <script>
 export default {
   name: 'Header',
+  data(){
+    return{
+      menu:[
+        {
+          nameLink: "CHARATCTERS",
+          url: "#",
+          currentPage: false
+        },
+         {
+          nameLink: "COMICS",
+          url: "#",
+          currentPage: true
+        },
+         {
+          nameLink: "MOVIES",
+          url: "#",
+          currentPage: false
+        },
+        {
+          nameLink: "TV",
+          url: "#",
+          currentPage: false
+        },
+        {
+          nameLink: "GAMES",
+          url: "#",
+          currentPage: false
+        },
+         {
+          nameLink: "COLECTIBLES",
+          url: "#",
+          currentPage: false
+        },
+         {
+          nameLink: "VIDIOS",
+          url: "#",
+          currentPage: false
+        },
+         {
+          nameLink: "FANS",
+          url: "#",
+          currentPage: false
+        },
+        {
+          nameLink: "NEWS",
+          url: "#",
+          currentPage: false
+        },
+         {
+          nameLink: "SHOPS",
+          url: "#",
+          currentPage: false
+        },
+      ]
+    }
+  }
  
 }
 </script>
@@ -34,8 +84,9 @@ export default {
 <style scoped lang="scss">
 header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 1.25rem;
 }
 
 nav{
@@ -44,7 +95,7 @@ nav{
   list-style: none;
     a{
       text-decoration: none ;
-      padding: 1.25rem;
+      padding: .9375rem;
     }
   }
 }
