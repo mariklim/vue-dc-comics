@@ -79,13 +79,13 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 .container{
   @import'../assets/style/variables';
   max-width: $containerSize;
-  padding-top: 1.875rem;
   margin: auto;
+  padding-top: 1.875rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
