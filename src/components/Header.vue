@@ -7,7 +7,7 @@
     <nav>
       <ul>
         <li v-for="(link, index) in menu" :key="index">
-          <a href="link.url">{{link.nameLink}}</a>
+          <a href="link.url" :class="{active : link.currentPage}">{{link.nameLink}}</a>
         </li>
             
             
@@ -94,10 +94,19 @@ nav{
   display: flex;
   list-style: none;
     a{
+      color: black;
+      font-weight: 700;
       text-decoration: none ;
       padding: .9375rem;
+      display: inline-block;
+       &.active{
+         border-bottom:2px solid #0282f9;
+         color: #4c95f9;
+       }
     }
   }
 }
+
+
 
 </style>
