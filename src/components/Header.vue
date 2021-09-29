@@ -86,7 +86,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.25rem;
+  padding: 1.25rem 2.5rem;
 }
 
 nav{
