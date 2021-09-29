@@ -1,19 +1,18 @@
 
 <template>
   <header>
-    <div class="logo">
-      <img src="../assets/img/dc-logo.png" alt="">
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/img/dc-logo.png" alt="">
+      </div>
+      <nav>
+        <ul>
+          <li v-for="(link, index) in menu" :key="index">
+            <a href="link.url" :class="{active : link.currentPage}">{{link.nameLink}}</a>
+          </li>    
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li v-for="(link, index) in menu" :key="index">
-          <a href="link.url" :class="{active : link.currentPage}">{{link.nameLink}}</a>
-        </li>
-            
-            
-             
-      </ul>
-    </nav>
   </header>
 </template>
 
@@ -82,11 +81,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-header{
+.container{
+  @import'../assets/style/variables';
+  max-width: $containerSize;
+  padding-top: 1.875rem;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 2.5rem;
 }
 
 nav{
