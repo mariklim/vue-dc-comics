@@ -155,9 +155,12 @@ export default {
       margin: auto;
     }
       & div{
+        height: 200px;
         padding: 1.25rem;
-        width: calc(100% / 6);
+        width: calc((100% / 6 ) - 10px);
+        margin: 1.875rem .3125rem;
         color: white;
+        overflow: hidden;
 
       }
 }
