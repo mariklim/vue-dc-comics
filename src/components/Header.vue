@@ -103,15 +103,18 @@ nav{
   ul{
   display: flex;
   list-style: none;
+  
     li{
        padding: 0 .9375rem;
     }
+
     a{
       color: black;
       font-weight: 700;
       text-decoration: none ;
       // padding: .9375rem;
       display: inline-block;
+
        &.active{
          border-bottom:5px solid #0282f9;
          color: #4c95f9;

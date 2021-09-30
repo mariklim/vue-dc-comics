@@ -9,26 +9,11 @@
       <!-- Main bottom icons nav -->
       <div class="main-bottom">
         <div class="main-nav">
-            <div class="link-icon">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="comics digital">
-              <span>DIGITAL COMICS</span>
+            <div v-for="(image,index) in gallery" :key="index" class="link-icon">
+              <img :src="image.scr" alt="">
+              <span>{{image.title}}</span>
             </div>
-            <div class="link-icon">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="comics digital">
-              <span>DIGITAL COMICS</span>
-            </div>
-            <div class="link-icon">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="comics digital">
-              <span>DIGITAL COMICS</span>
-            </div>
-            <div class="link-icon">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="comics digital">
-              <span>DIGITAL COMICS</span>
-            </div>
-            <div class="link-icon">
-              <img src="../assets/img/buy-comics-digital-comics.png" alt="comics digital">
-              <span>DIGITAL COMICS</span>
-            </div>
+           
         </div>
       </div>
       <!-- /Main bottom icons nav -->
@@ -40,6 +25,32 @@
 <script>
 export default {
   name: 'Content',
+  data(){
+    return{
+      gallery:[
+        {
+        scr:require('../assets/img/buy-comics-digital-comics.png'),
+        title:"DIGITAL COMICS",
+        },
+        {
+        scr:require("../assets/img/buy-comics-merchandise.png"),
+        title:"DC MERCHANDISE",
+        },
+        {
+        scr:require("../assets/img/buy-comics-subscriptions.png"),
+        title:"SUBSCRIPTION",
+        },
+        {
+        scr:require("../assets/img/buy-comics-shop-locator.png"),
+        title:"COMICS SHOP LOCATOR",
+        },
+        {
+        scr:require("../assets/img/buy-dc-power-visa.svg"),
+        title:"CD POWER VISA",
+        },
+      ]
+    }
+  }
  
 }
 </script>
