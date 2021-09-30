@@ -81,6 +81,8 @@ export default {
 
 
 <style scoped lang="scss">
+header{ 
+  }
 .container{
   @import'../assets/style/variables';
   max-width: $containerSize;
@@ -88,22 +90,32 @@ export default {
   padding-top: 1.875rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  
 }
-
+.logo{
+  img{
+    width: 80%;
+  padding-bottom: .625rem;
+  }
+}
 nav{
   ul{
   display: flex;
   list-style: none;
+    li{
+       padding: 0 .9375rem;
+    }
     a{
       color: black;
       font-weight: 700;
       text-decoration: none ;
-      padding: .9375rem;
+      // padding: .9375rem;
       display: inline-block;
        &.active{
-         border-bottom:2px solid #0282f9;
+         border-bottom:5px solid #0282f9;
          color: #4c95f9;
+         padding-bottom: 2.5rem;
        }
     }
   }

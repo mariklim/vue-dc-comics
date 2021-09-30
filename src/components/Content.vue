@@ -46,7 +46,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.main-top{
+.main-top{  
   background-color: black;
   color: azure;
   height: 12.5rem;
