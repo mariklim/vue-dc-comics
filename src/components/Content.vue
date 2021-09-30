@@ -1,8 +1,11 @@
 <template>
   <section>
       <!-- Main top  -->
+      <div class="hero">
+        
+      </div>
       <div class="main-top">
-        <img src="../assets/img/jumbotron.jpg" alt="">
+
       </div>
       <!--/ Main top  -->
 
@@ -56,15 +59,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.main-top{  
-  background-color: black;
-  color: azure;
+.hero{  
+  background-image:url("../assets/img/jumbotron.jpg");
+  background-size: cover;
   height: 25rem;
-  overflow: hidden;
+}
 
-    img{
-      object-fit:contain;
-    }
+.main-top{
+    height: 25rem;
+    background-color: black
 }
 .main-bottom{
   @import'../assets/style/variables';
