@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <Header/>
-    <main> <Content/></main>
+    <main> <Content/>
+    </main>
     <Footer/>
 
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
@@ -18,7 +19,7 @@ export default {
   components: {
     Header,
     Footer,
-    Content
+    Content,
   }
 }
 </script>
