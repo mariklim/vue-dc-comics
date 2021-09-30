@@ -2,7 +2,7 @@
   <section>
       <!-- Main top  -->
       <div class="main-top">
-
+        <img src="../assets/img/jumbotron.jpg" alt="">
       </div>
       <!--/ Main top  -->
 
@@ -13,7 +13,6 @@
               <img :src="image.scr" alt="">
               <span>{{image.title}}</span>
             </div>
-           
         </div>
       </div>
       <!-- /Main bottom icons nav -->
@@ -48,7 +47,7 @@ export default {
         scr:require("../assets/img/buy-dc-power-visa.svg"),
         title:"CD POWER VISA",
         },
-      ]
+      ],
     }
   }
  
@@ -60,7 +59,12 @@ export default {
 .main-top{  
   background-color: black;
   color: azure;
-  height: 12.5rem;
+  height: 25rem;
+  overflow: hidden;
+
+    img{
+      object-fit:contain;
+    }
 }
 .main-bottom{
   @import'../assets/style/variables';
