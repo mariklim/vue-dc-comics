@@ -1,12 +1,9 @@
 <template>
   <section>
       <!-- Main top  -->
-      <div class="hero">
-        
-      </div>
       <div class="main-top">
       <div class="container">
-        <Card :key="index" v-for="(data, index) in myJson" :info="data"/>
+        <!-- <Card :key="index" v-for="(data, index) in myJson" :info="data"/> -->
       </div>  
       </div>
       <!--/ Main top  -->
@@ -26,15 +23,15 @@
 
 <script>
 // importo i nuovi contetnti in questo componento per farle funzionare qua
-import json from "./dc-comics.json";
-import Card from "./Card.vue"
+// import json from "./dc-comics.json";
+// import Card from "./Card.vue"
 export default {
-  components:{
-    Card
-  },
+  // components:{
+  //   Card
+  // },
   data(){
     return{
-      myJson: json,
+      // myJson: json,
       gallery:[
         {
         scr:require('../assets/img/buy-comics-digital-comics.png'),
@@ -64,6 +61,7 @@ export default {
 </script>
 <style scoped lang="scss">
 .main-top{
+  height: 100%;
   background-color: black;
 }
 .hero{  
