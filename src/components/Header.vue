@@ -23,7 +23,7 @@ export default {
     return{
       menu:[
         {
-          nameLink: "CHARATCTERS",
+          nameLink: "CHARACTERS",
           url: "#",
           currentPage: false
         },

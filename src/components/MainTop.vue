@@ -121,10 +121,10 @@ export default {
   button {
     background-color: $mainColor;
     color: white;
-    font-size: .9375rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     border: 0;
-    padding: .4375rem 3.4375rem;
+    padding: 0.4375rem 3.4375rem;
     cursor: pointer;
   }
 }
