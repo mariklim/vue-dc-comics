@@ -1,10 +1,10 @@
 <template>
-<div>
-  <div class="card">
-      <img  :src="info.thumb" alt="info.type">
-      <p>{{info.series}}</p>
-  </div>
-</div>
+<div class="cards-container">
+     <div class="cover-img">
+        <img :src="info.thumb" :alt="info.series">
+     </div>
+         <p>{{info.series}}</p>
+ </div> 
 </template>
 
 <script>
@@ -14,14 +14,19 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
-.card{
-    width: calc((100% / 6) - 1.875rem);
-    padding: .625rem;
-    
-     & img{
-        
-     }
-}
+<style lang="scss">
+ @import '../assets/style/variables';
+ .cards-container{
+    width: calc($containerSize / 6);}
+    .cover-img{
+      width: calc($containerSize / 6);
+      height: 12.5rem;
+      overflow: hidden;
+      padding: .9375rem;
+      margin-bottom: .625rem;
 
+       img {
+           width: 100%;
+       }
+}
 </style>

@@ -1,11 +1,11 @@
 <template>
   <section>
       <!-- Main top  -->
-      <div class="main-top">
-      <div class="container">
+      <!-- <div class="main-top">
+      <div class="container"> -->
         <!-- <Card :key="index" v-for="(data, index) in myJson" :info="data"/> -->
-      </div>  
-      </div>
+      <!-- </div>  
+      </div> -->
       <!--/ Main top  -->
 
       <!-- Main bottom icons nav -->
@@ -56,7 +56,7 @@ export default {
       ],
     }
   },
-  name: 'Content',
+  name: 'MainBottom',
 }
 </script>
 <style scoped lang="scss">

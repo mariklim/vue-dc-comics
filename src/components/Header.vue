@@ -81,8 +81,6 @@ export default {
 
 
 <style scoped lang="scss">
-header{ 
-  }
 .container{
   @import'../assets/style/variables';
   max-width: $containerSize;

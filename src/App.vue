@@ -2,28 +2,29 @@
   <div id="app">
     <Header/>
     <main> 
+      <MainTop/>
      <Hero :src="require('./assets/img/jumbotron.jpg')" />
-    <Content/>
+    <MainBottom/>
     </main>
     <Footer/>
-
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import Content from './components/Content.vue'
+import MainBottom from './components/MainBottom.vue'
 import Hero from './components/Hero.vue'
+import MainTop from './components/MainTop.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Footer,
-    Content,
+    Footer, 
+    MainBottom,
     Hero,
+    MainTop,
   }
 }
 </script>
