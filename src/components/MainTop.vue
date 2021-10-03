@@ -1,6 +1,6 @@
 <template>
 <div class="bg">
-    <div class="container-main">
+    <div class="container">
         <div class="cards" >
             <Card :key="index" v-for="(data,index) in allCards" :info="data"/>
         </div>	
@@ -100,18 +100,18 @@ export default {
 }
 
 <style lang="scss">
+ @import '../assets/style/variables';
 .bg{
- background-color: #303030;
+ background-color: $gray;
 }
-.container-main{
-  @import '../assets/style/variables';
+.container{
   width: $containerSize;
   margin: auto;
   color: white;
   text-align: center;
   text-transform: uppercase;
     .cards{
-        padding: 1.25rem 0;
+        padding: 3.125rem 0;
         display: flex;
         flex-wrap: wrap;
     }

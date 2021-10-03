@@ -17,9 +17,9 @@ export default {
 <style lang="scss">
  @import '../assets/style/variables';
  .cards-container{
-    width: calc($containerSize / 6);}
+    width: calc($containerSize / 6);
+
     .cover-img{
-      width: calc($containerSize / 6);
       height: 12.5rem;
       overflow: hidden;
       padding: .9375rem;
@@ -28,5 +28,6 @@ export default {
        img {
            width: 100%;
        }
+    }
 }
 </style>

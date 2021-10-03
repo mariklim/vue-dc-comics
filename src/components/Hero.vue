@@ -1,5 +1,8 @@
 <template>
     <section :style="`background-image: url(${src});`">
+        <div class="title-box">
+            CURRENT SERIES
+        </div>
     </section>
 </template>
 
@@ -15,5 +18,17 @@ export default {
 section {
     height: 20rem;
     background-size: cover;
+    position: relative;
+        & .title-box{
+            background-color: $mainColor;
+            color: white;
+            font-size: 1.5625rem;
+            font-weight: bold;
+            display: inline-block;
+            padding: .625rem 1.875rem;
+            position: relative;
+            top: 90%;
+            left: 12%;
+        }
 }
 </style>
